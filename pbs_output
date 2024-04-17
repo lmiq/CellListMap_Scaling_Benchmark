@@ -1,0 +1,175 @@
+Benchmarking with N = 5000 ... 
+ Available threads: 4; using = (4, 4)
+t0 = Trial(980.364 μs)
+t1 = Trial(797.683 μs)
+t2 = Trial(641.380 μs)
+t3 = Trial(7.213 ms)
+ finished.
+Benchmarking with N = 5000 ... 
+ Available threads: 4; using = (1, 1)
+t0 = Trial(2.247 ms)
+t1 = Trial(1.778 ms)
+t2 = Trial(2.281 ms)
+t3 = Trial(27.064 ms)
+ finished.
+Benchmarking with N = 10000 ... 
+ Available threads: 4; using = (1, 1)
+t0 = Trial(4.398 ms)
+t1 = Trial(3.571 ms)
+t2 = Trial(4.599 ms)
+t3 = Trial(73.190 ms)
+ finished.
+Benchmarking with N = 50000 ... 
+ Available threads: 4; using = (1, 1)
+t0 = Trial(14.548 ms)
+t1 = Trial(12.404 ms)
+t2 = Trial(18.221 ms)
+t3 = Trial(294.426 ms)
+ finished.
+Benchmarking with N = 100000 ... 
+ Available threads: 4; using = (1, 1)
+t0 = Trial(26.606 ms)
+t1 = Trial(23.555 ms)
+t2 = Trial(35.166 ms)
+t3 = Trial(560.666 ms)
+ finished.
+Benchmarking with N = 500000 ... 
+ Available threads: 4; using = (1, 1)
+t0 = Trial(134.390 ms)
+t1 = Trial(126.530 ms)
+t2 = Trial(194.943 ms)
+t3 = Trial(2.700 s)
+ finished.
+Benchmarking with N = 1000000 ... 
+ Available threads: 4; using = (1, 1)
+t0 = Trial(271.744 ms)
+t1 = Trial(258.041 ms)
+t2 = Trial(394.923 ms)
+t3 = Trial(5.684 s)
+ finished.
+Benchmarking with N = 5000000 ... 
+ Available threads: 4; using = (1, 1)
+t0 = Trial(1.772 s)
+t1 = Trial(1.426 s)
+t2 = Trial(2.281 s)
+t3 = Trial(27.369 s)
+ finished.
+Benchmarking with N = 10000000 ... 
+ Available threads: 4; using = (1, 1)
+t0 = Trial(5.163 s)
+t1 = Trial(3.708 s)
+t2 = Trial(5.818 s)
+t3 = Trial(55.132 s)
+ finished.
+Benchmarking with N = 5000 ... 
+ Available threads: 4; using = (2, 2)
+t0 = Trial(1.528 ms)
+t1 = Trial(1.414 ms)
+t2 = Trial(1.200 ms)
+t3 = Trial(14.067 ms)
+ finished.
+Benchmarking with N = 10000 ... 
+ Available threads: 4; using = (2, 2)
+t0 = Trial(3.087 ms)
+t1 = Trial(2.916 ms)
+t2 = Trial(2.389 ms)
+t3 = Trial(37.326 ms)
+ finished.
+Benchmarking with N = 50000 ... 
+ Available threads: 4; using = (2, 2)
+t0 = Trial(11.076 ms)
+t1 = Trial(10.605 ms)
+t2 = Trial(9.423 ms)
+t3 = Trial(148.450 ms)
+ finished.
+Benchmarking with N = 100000 ... 
+ Available threads: 4; using = (2, 2)
+t0 = Trial(21.421 ms)
+t1 = Trial(20.616 ms)
+t2 = Trial(18.954 ms)
+t3 = Trial(279.540 ms)
+ finished.
+Benchmarking with N = 500000 ... 
+ Available threads: 4; using = (2, 2)
+t0 = Trial(105.573 ms)
+t1 = Trial(102.092 ms)
+t2 = Trial(101.968 ms)
+t3 = Trial(1.364 s)
+ finished.
+Benchmarking with N = 1000000 ... 
+ Available threads: 4; using = (2, 2)
+t0 = Trial(216.521 ms)
+t1 = Trial(210.622 ms)
+t2 = Trial(206.596 ms)
+t3 = Trial(2.829 s)
+ finished.
+Benchmarking with N = 5000000 ... 
+ Available threads: 4; using = (2, 2)
+t0 = Trial(2.130 s)
+t1 = Trial(2.256 s)
+t2 = Trial(1.441 s)
+t3 = Trial(13.710 s)
+ finished.
+Benchmarking with N = 10000000 ... 
+ Available threads: 4; using = (2, 2)
+t0 = Trial(4.987 s)
+t1 = Trial(3.678 s)
+t2 = Trial(3.467 s)
+t3 = Trial(27.508 s)
+ finished.
+Benchmarking with N = 5000 ... 
+ Available threads: 4; using = (4, 4)
+t0 = Trial(959.866 μs)
+t1 = Trial(792.943 μs)
+t2 = Trial(646.099 μs)
+t3 = Trial(7.198 ms)
+ finished.
+Benchmarking with N = 10000 ... 
+ Available threads: 4; using = (4, 4)
+t0 = Trial(1.815 ms)
+t1 = Trial(1.522 ms)
+t2 = Trial(1.270 ms)
+t3 = Trial(18.772 ms)
+ finished.
+Benchmarking with N = 50000 ... 
+ Available threads: 4; using = (4, 4)
+t0 = Trial(6.460 ms)
+t1 = Trial(5.621 ms)
+t2 = Trial(5.031 ms)
+t3 = Trial(74.586 ms)
+ finished.
+Benchmarking with N = 100000 ... 
+ Available threads: 4; using = (4, 4)
+t0 = Trial(12.533 ms)
+t1 = Trial(11.164 ms)
+t2 = Trial(10.194 ms)
+t3 = Trial(140.485 ms)
+ finished.
+Benchmarking with N = 500000 ... 
+ Available threads: 4; using = (4, 4)
+t0 = Trial(61.978 ms)
+t1 = Trial(56.869 ms)
+t2 = Trial(55.638 ms)
+t3 = Trial(681.176 ms)
+ finished.
+Benchmarking with N = 1000000 ... 
+ Available threads: 4; using = (4, 4)
+t0 = Trial(339.016 ms)
+t1 = Trial(151.081 ms)
+t2 = Trial(135.852 ms)
+t3 = Trial(1.416 s)
+ finished.
+Benchmarking with N = 5000000 ... 
+ Available threads: 4; using = (4, 4)
+t0 = Trial(1.248 s)
+t1 = Trial(896.145 ms)
+t2 = Trial(882.096 ms)
+t3 = Trial(6.843 s)
+ finished.
+Benchmarking with N = 10000000 ... 
+ Available threads: 4; using = (4, 4)
+t0 = Trial(3.600 s)
+t1 = Trial(3.261 s)
+t2 = Trial(2.018 s)
+t3 = Trial(13.747 s)
+ finished.

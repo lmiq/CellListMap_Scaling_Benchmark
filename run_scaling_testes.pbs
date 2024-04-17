@@ -1,0 +1,15 @@
+#PBS -N celllistmap
+#PBS -q testes
+#PBS -l nodes=1:ppn=4
+#PBS -m abe
+#PBS -e pbs_error
+#PBS -o pbs_output
+
+julia=/home/lovelace/proj/proj864/lmartine/.juliaup/bin/julia
+workdir=/home/lovelace/proj/proj864/lmartine/CellListMap
+cd $workdir
+rm -f pbs_error
+rm -f pbs_output
+
+script=./scaling_nthreads.jl
+JULIA_EXCLUSIVE=1 $julia -t 4 $script

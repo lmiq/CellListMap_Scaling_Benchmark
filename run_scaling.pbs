@@ -1,0 +1,21 @@
+#PBS -N celllistmap
+#PBS -q par128
+#PBS -l nodes=1:ppn=128
+#PBS -m abe
+#PBS -e pbs_error_par128
+#PBS -o pbs_output_par128
+
+julia=/home/lovelace/proj/proj864/lmartine/.juliaup/bin/julia
+workdir=/home/lovelace/proj/proj864/lmartine/CellListMap
+cd $workdir
+
+rm -f pbs_error_par128
+rm -f pbs_output_par128
+
+script=./scaling_nthreads.jl
+#JULIA_EXCLUSIVE=1 $julia -t 128 $script
+$julia -t 128 $script
+
+
+
+

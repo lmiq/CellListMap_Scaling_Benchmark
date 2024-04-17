@@ -1,0 +1,28 @@
+#PBS -N cmap
+#PBS -q par128
+#PBS -l nodes=1:ppn=128
+#PBS -m abe
+#PBS -e cmap_err
+#PBS -o cmap_log
+
+julia_dir=/home/lovelace/proj/proj864/lmartine/local/bin/julia
+workdir=/home/lovelace/proj/proj864/lmartine/CellListMap
+cd $workdir
+
+JULIA_EXCLUSIVE=1 $julia -t 128 scaling_heuristic.jl
+JULIA_EXCLUSIVE=1 $julia -t 64  scaling_heuristic.jl
+JULIA_EXCLUSIVE=1 $julia -t 32  scaling_heuristic.jl
+JULIA_EXCLUSIVE=1 $julia -t 16  scaling_heuristic.jl
+JULIA_EXCLUSIVE=1 $julia -t 8   scaling_heuristic.jl
+JULIA_EXCLUSIVE=1 $julia -t 4   scaling_heuristic.jl
+JULIA_EXCLUSIVE=1 $julia -t 2   scaling_heuristic.jl
+JULIA_EXCLUSIVE=1 $julia -t 1   scaling_heuristic.jl
+
+JULIA_EXCLUSIVE=1 $julia -t 128 scaling_threads.jl
+JULIA_EXCLUSIVE=1 $julia -t 64  scaling_threads.jl
+JULIA_EXCLUSIVE=1 $julia -t 32  scaling_threads.jl
+JULIA_EXCLUSIVE=1 $julia -t 16  scaling_threads.jl
+JULIA_EXCLUSIVE=1 $julia -t 8   scaling_threads.jl
+JULIA_EXCLUSIVE=1 $julia -t 4   scaling_threads.jl
+JULIA_EXCLUSIVE=1 $julia -t 2   scaling_threads.jl
+JULIA_EXCLUSIVE=1 $julia -t 1   scaling_threads.jl

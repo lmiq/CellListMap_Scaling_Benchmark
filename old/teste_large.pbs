@@ -1,0 +1,14 @@
+#PBS -N cmap
+#PBS -q testes
+#PBS -l nodes=1:ppn=16
+#PBS -m abe
+#PBS -e err_pbs
+#PBS -o log_pbs
+
+julia_dir=/home/lovelace/proj/proj864/lmartine/local/bin/julia
+basedir=/home/lovelace/proj/proj864/lmartine/CellListMap
+
+julia=/home/lovelace/proj/proj864/lmartine/.local/bin/julia
+workdir=/home/lovelace/proj/proj864/lmartine/CellListMap
+cd $workdir
+$julia -t 16 scaling.jl
