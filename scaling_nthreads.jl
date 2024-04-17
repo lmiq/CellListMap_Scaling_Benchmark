@@ -139,7 +139,22 @@ end
 # precompile everything
 #
 function main()
-    output_file="final_$(pkgversion(CellListMap))_$(Threads.nthreads()).dat"
+
+    if length(ARGS) != 2 
+        println("""
+
+            Run with julia -t auto scaling_nthreads 8 128
+            where 8 is the maximum number of batches for cell list computation,
+            and 128 is the maximum number of batches for mapping.
+
+        """)
+        return nothing
+    end
+
+    nc = parse(Int, ARGS[1])
+    nm = parse(Int, ARGS[2])
+
+    output_file="final_$(pkgversion(CellListMap))_nc$(nc)_nm$(nm).dat"
     if isfile(output_file)
         mv(output_file, output_file*".OLD",force=true)
     end
@@ -151,8 +166,8 @@ function main()
     n_particles = [ div(10^n,m) for m in (2,1), n in (4,5,6,7) ]
 
     for nthreads in [128, 64, 32, 16, 8, 4, 2, 1]
-        if nthreads <= Threads.nthreads()
-            nbatches = (nthreads, nthreads)
+        if nthreads <= Threads.nthreads() && (nthreads >= nc || nthreads >= nm)
+            nbatches = (max(nthreads, nc), max(nthreads, nm))
             scaling(nbatches,n_particles,output_file;save=true)
         end
     end

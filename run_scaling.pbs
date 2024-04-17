@@ -12,10 +12,5 @@ cd $workdir
 rm -f pbs_error_par128
 rm -f pbs_output_par128
 
-script=./scaling_nthreads.jl
-#JULIA_EXCLUSIVE=1 $julia -t 128 $script
-$julia -t 128 $script
-
-
-
+$julia -t 128 ./scaling_nthreads.jl 16 128
 
