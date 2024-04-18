@@ -25,8 +25,8 @@ function updict!(dict,str,bench)
 end
 
 function scaling(nbatches,n_particles,output_file;save=true)
-    (first(nbatches) == last(nbatches)) || error("use first(nbatches) == last(nbatches)")
-    n_used_threads = first(nbatches)
+    #(first(nbatches) == last(nbatches)) || error("use first(nbatches) == last(nbatches)")
+    n_used_threads = maximum(nbatches)
     datakey="$n_used_threads"
     results = try 
         OrderedDict(TOML.parsefile(output_file))
@@ -167,7 +167,7 @@ function main()
 
     for nthreads in [128, 64, 32, 16, 8, 4, 2, 1]
         if nthreads <= Threads.nthreads() && (nthreads >= nc || nthreads >= nm)
-            nbatches = (max(nthreads, nc), max(nthreads, nm))
+            nbatches = (min(nthreads, nc), min(nthreads, nm))
             scaling(nbatches,n_particles,output_file;save=true)
         end
     end

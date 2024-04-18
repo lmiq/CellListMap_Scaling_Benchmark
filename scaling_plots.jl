@@ -43,8 +43,8 @@ p = plot(layout=(2,2))
 for (sp,a) in pairs(["time map", "time scr", "total time scr", "total time up1"])
   titles = ["map time", "cell list time", "total time", "total update time" ]
   ic = 0
-  for n in values(data["1"]["N"])
-      i = findfirst(isequal(n),values(data["1"]["N"]))
+  for n in values(last(first(data))["N"])
+      i = findfirst(isequal(n),values(last(first(data))["N"]))
       t = Float64[]
       ic += 1
       for np in keys(data)
@@ -104,6 +104,6 @@ for (sp,a) in pairs(["time map", "time scr", "total time scr", "total time up1"]
   )
 end
 
-savefig("./scaling_$(pkgversion(CellListMap)).png")
-savefig("./scaling_$(pkgversion(CellListMap)).pdf")
+savefig("./$(ARGS[1][1:end-4]).png")
+savefig("./$(ARGS[1][1:end-4]).pdf")
 

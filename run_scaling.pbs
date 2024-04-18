@@ -6,7 +6,7 @@
 #PBS -o pbs_output_par128
 
 julia=/home/lovelace/proj/proj864/lmartine/.juliaup/bin/julia
-workdir=/home/lovelace/proj/proj864/lmartine/CellListMap
+workdir=/home/lovelace/proj/proj864/lmartine/CellListMap_Scaling_Benchmark
 cd $workdir
 
 rm -f pbs_error_par128
