@@ -1,48 +1,48 @@
 Benchmarking with N = 5000 ... 
-Trial(6.516 ms)
-Trial(2.422 ms)
-Trial(3.013 ms)
-Trial(4.284 ms)
+Trial(2.795 ms)
+Trial(2.279 ms)
+Trial(1.792 ms)
+Trial(28.083 ms)
  finished.
 Benchmarking with N = 10000 ... 
-Trial(6.700 ms)
-Trial(3.005 ms)
-Trial(2.614 ms)
-Trial(7.537 ms)
+Trial(5.510 ms)
+Trial(4.613 ms)
+Trial(3.616 ms)
+Trial(73.646 ms)
  finished.
 Benchmarking with N = 50000 ... 
-Trial(13.141 ms)
-Trial(8.851 ms)
-Trial(6.101 ms)
-Trial(20.961 ms)
+Trial(20.601 ms)
+Trial(18.345 ms)
+Trial(12.472 ms)
+Trial(305.887 ms)
  finished.
 Benchmarking with N = 100000 ... 
-Trial(19.673 ms)
-Trial(14.871 ms)
-Trial(10.389 ms)
-Trial(37.625 ms)
+Trial(38.953 ms)
+Trial(35.798 ms)
+Trial(23.058 ms)
+Trial(569.894 ms)
  finished.
 Benchmarking with N = 500000 ... 
-Trial(66.638 ms)
-Trial(57.141 ms)
-Trial(43.272 ms)
-Trial(175.741 ms)
+Trial(209.551 ms)
+Trial(181.755 ms)
+Trial(117.967 ms)
+Trial(2.822 s)
  finished.
 Benchmarking with N = 1000000 ... 
-Trial(130.140 ms)
-Trial(125.916 ms)
-Trial(88.592 ms)
-Trial(373.517 ms)
+Trial(446.686 ms)
+Trial(361.839 ms)
+Trial(267.047 ms)
+Trial(5.794 s)
  finished.
 Benchmarking with N = 5000000 ... 
-Trial(746.640 ms)
-Trial(3.411 s)
-Trial(613.411 ms)
-Trial(1.795 s)
+Trial(8.917 s)
+Trial(2.101 s)
+Trial(1.541 s)
+Trial(28.388 s)
  finished.
 Benchmarking with N = 10000000 ... 
-Trial(5.452 s)
-Trial(1.238 s)
-Trial(1.285 s)
-Trial(3.531 s)
+Trial(16.666 s)
+Trial(5.023 s)
+Trial(4.736 s)
+Trial(56.231 s)
  finished.

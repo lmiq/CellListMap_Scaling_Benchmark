@@ -166,7 +166,7 @@ function main()
     n_particles = [ div(10^n,m) for m in (2,1), n in (4,5,6,7) ]
 
     for nthreads in [128, 64, 32, 16, 8, 4, 2, 1]
-        if nthreads <= Threads.nthreads() && (nthreads >= nc || nthreads >= nm)
+        if nthreads <= Threads.nthreads() 
             nbatches = (min(nthreads, nc), min(nthreads, nm))
             scaling(nbatches,n_particles,output_file;save=true)
         end
